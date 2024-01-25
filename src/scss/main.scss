@@ -1,0 +1,19 @@
+@import './BoardRow';
+@import './GameBoard';
+@import './Modal';
+html {
+    height: 100dvh;
+    overflow: hidden;
+}
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: darkgrey;
+    color: white;
+}
+
+#root {
+    height: 100%;
+}

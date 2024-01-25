@@ -1,0 +1,125 @@
+.boardrow {
+  display: flex;
+}
+.boardcell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 2px;
+  aspect-ratio: 1;
+}
+.boardcell > svg {
+  width: 75%;
+  height: 75%;
+  filter: drop-shadow(0px 0px 5px black);
+}
+.boardcell_show {
+  background-color: hsl(0, 0%, 18%);
+  border: 1px groove black;
+  cursor: default;
+}
+.boardcell_hide {
+  background-color: rgb(32, 32, 32);
+  cursor: pointer;
+}
+.boardcell_hide:hover {
+  background: radial-gradient(hsl(0, 100%, 20%) 0%, rgb(32, 32, 32) 80%);
+}
+
+.gameboard {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: space-between;
+  flex-shrink: 1;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  box-sizing: border-box;
+  width: 50%;
+  height: 50%;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid black;
+  border-radius: 0.5em;
+  place-items: center;
+  justify-content: center;
+  gap: 1em;
+  z-index: 9999;
+}
+.modal > h1 {
+  box-sizing: border-box;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  border-radius: inherit;
+  padding: 0.25em;
+  margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.modal_slider {
+  box-sizing: border-box;
+  padding: 1em;
+  width: 50%;
+  z-index: 2;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  border-radius: inherit;
+}
+.modal_slider_text {
+  font-size: 1.5em;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.modal_slider_input {
+  width: 100%;
+  background-color: red;
+  cursor: pointer;
+}
+.modal_slider_values {
+  display: flex;
+  justify-content: space-between;
+  padding: 1px 0.5em 1px 0.5em;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.modal_button {
+  box-sizing: border-box;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  width: 5em;
+  min-height: 2em;
+  color: white;
+  font-size: 1.5em;
+  padding: 0;
+  border-radius: inherit;
+  transition: background-color 120ms ease-in-out;
+  cursor: pointer;
+}
+.modal_button:hover {
+  background-color: black;
+}
+
+html {
+  height: 100dvh;
+  overflow: hidden;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: darkgrey;
+  color: white;
+}
+
+#root {
+  height: 100%;
+}/*# sourceMappingURL=main.css.map */
